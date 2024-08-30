@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:cursive;
+    
+}
+body{
+    width: 100vw;
+}
+header{
+    z-index: 1;
+}
+li:hover{
+    border: #3e7ebe 1px solid;
+    border-radius: 5px;
+    
+}
+/* #main-index{
+    height: 145vh;
+    margin-bottom: 10vh;
+} */
+/* #contenedor{
+    height: 35vh;
+} */
+#menu-hamb{
+    width: 60px;
+}
+#img_header{
+    height: 80px;
+    width: 80px;
+ }
+
+/* #contenedor-dest{
+    height: 40vh;
+} */
+#img_footer{
+    height: 80px;
+    width: 80px;
+ }
+ #redes-sociales, img{
+    width: 40px;
+    height: 40px;
+ }
+#logo-twitter{
+    width: 36px;
+    height: 36px;
+}
+ a{
+    text-decoration: none !important;
+ }
+ /* .flip-card {
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  
+  .flip-card-back {
+    transform: rotateY(180deg);
+  } */

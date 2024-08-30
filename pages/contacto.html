@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contactate con Viajes Grupo 1 para consultas sobre nuestros paquetes, vuelos y destinos turísticos. Estamos aquí para ayudarte a planificar tu próximo viaje."
+    />
+    <meta
+      name="keywords"
+      content="contacto, viajes, consultas, paquetes turísticos, vuelos, Viajes Grupo 1"
+    />
+    <meta name="author" content="Viajes Grupo 1" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <title>Contacto-Formulario de contacto-Viajes Grupo 1</title>
+  </head>
+  <body>
+    <header
+      class="container-fluid sticky-top d-flex justify-content-center shadow-sm bg-secondary-subtle bg-opacity-75"
+    >
+      <section class="row col-8" id="logo">
+        <div class="col-4">
+          <img
+            class="p-0 m-2"
+            id="img_header"
+            src="../assets/images/agencia-logo.jpg"
+            alt="Brujula-logo de la empresa"
+          />
+        </div>
+        <div
+          class="col-8 d-flex justify-content-end align-items-center d-md-none"
+        >
+          <nav class="dropdown p-0">
+            <button
+              id="boton"
+              class="btn p-0"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img
+                id="menu_hamb"
+                src="../assets/images/menu-hamb.svg"
+                alt="menu-hamburguesa"
+              />
+            </button>
+            <ul class="dropdown-menu bg-transparent border-0">
+              <li>
+                <a
+                  class="dropdown-item bg-primary-subtle border border-black rounded w-75 float-end"
+                  href="../index.html"
+                  type="button"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item bg-primary-subtle border border-black rounded w-75 float-end"
+                  href="./paquetes.html"
+                  type="button"
+                  >Paquetes</a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item bg-primary-subtle border border-black rounded w-75 float-end"
+                  href="./vuelos.html"
+                  type="button"
+                  >Vuelos</a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item bg-primary-subtle border border-black rounded w-75 float-end"
+                  href="./blog.html"
+                  type="button"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item bg-primary-subtle border border-black rounded w-75 float-end"
+                  href="./contacto.html"
+                  type="button"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <nav
+          class="col-8 d-none d-md-flex justify-content-center align-items-end h-100 p-0"
+        >
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a
+                class="nav-link text-primary"
+                aria-current="page"
+                href="../index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./paquetes.html">Paquetes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./vuelos.html">Vuelos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+    <main class="container-fluid mt-5 mb-4 pb-5">
+      <div class="row d-flex justify-content-around m-0 p-2 p-sm-1">
+        <h2 class="col-11 col-md-8 col-lg-7 mb-2 text-primary">Contacto</h2>
+        <section class="col-11 col-md-8 col-lg-7 border border-black p-4">
+          <form action="" method="post" id="form_contacto">
+            <div
+              class="container-fluid p-0 d-flex flex-column flex-md-row justify-content-evenly"
+            >
+              <div class="col-12 col-md-5">
+                <label for="nombre">Nombre:</label><br />
+                <input
+                  class="w-100 border-black mb-3 rounded p-1"
+                  type="text"
+                  name="nombre"
+                  id="nombre"
+                  required
+                /><br />
+              </div>
+              <div class="col-2"></div>
+              <div class="col-12 col-md-5">
+                <label for="apellido">Apellido:</label><br />
+                <input
+                  class="w-100 border-black mb-3 rounded p-1"
+                  type="text"
+                  name="apellido"
+                  id="apellido"
+                  required
+                /><br />
+              </div>
+            </div>
+            <label for="email">Correo electrónico:</label><br />
+            <input
+              class="w-100 border-black mb-3 rounded p-1"
+              type="email"
+              id="email"
+              name="email"
+              required
+            /><br />
+            <label for="telefono">Teléfono:</label><br />
+            <input
+              class="w-50 border-black mb-3 rounded p-1"
+              type="tel"
+              id="telefono"
+              name="telefono"
+              required
+            /><br />
+            <label for="consulta">Consulta:</label><br />
+            <textarea
+              class="w-100 border-black mb-3 rounded p-1"
+              id="consulta"
+              name="consulta"
+              rows="5"
+              required
+            ></textarea
+            ><br />
+            <input
+              class="bg-success bg-opacity-75 w-25 border p-2 rounded float-end"
+              type="submit"
+              value="Enviar"
+              id="boton_enviar"
+            />
+          </form>
+        </section>
+      </div>
+    </main>
+    <footer
+      class="container-fluid p-0 m-0 d-flex justify-content-center shadow-sm bg-secondary-subtle"
+    >
+      <div class="row col-11">
+        <section
+          id="logo_footer"
+          class="w-75 h-100 d-flex justify-content-start align-items-center p-0 m-0"
+        >
+          <img
+            class="p-0 m-2"
+            id="img_footer"
+            src="../assets/images/agencia-logo.jpg"
+            alt="Brujula-logo de la empresa"
+          />
+          <article class="p-0 m-0">
+            <h4 class="p-0 m-0">Viajes Grupo 1</h4>
+            <p class="p-0 m-0">Teléfonos: 26987632-26980987</p>
+            <p class="p-0 m-0">E-mail: grupo1@gmail.com</p>
+          </article>
+        </section>
+        <section
+          id="redes-sociales"
+          class="col-5 w-25 h-100 d-flex justify-content-end align-items-center p-0 m-0"
+        >
+          <img class="p-1" src="../assets/images/instagram .png" alt="" />
+          <img
+            class="p-1"
+            id="logo-twitter"
+            src="../assets/images/twitter .png"
+            alt=""
+          />
+          <img class="p-1" src="../assets/images/facebook .png" alt="" />
+        </section>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
