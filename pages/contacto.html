@@ -22,25 +22,20 @@
     <title>Contacto-Formulario de contacto-Viajes Grupo 1</title>
   </head>
   <body>
-    <header
-      class="container-fluid sticky-top d-flex justify-content-center shadow-sm bg-secondary-subtle bg-opacity-75"
-    >
-      <section class="row col-8" id="logo">
+    <header class="container-fluid">
+      <section class="row" id="logo">
         <div class="col-4">
           <img
-            class="p-0 m-2"
             id="img_header"
             src="../assets/images/agencia-logo.jpg"
             alt="Brujula-logo de la empresa"
           />
         </div>
-        <div
-          class="col-8 d-flex justify-content-end align-items-center d-md-none"
-        >
-          <nav class="dropdown p-0">
+        <div class="col-8 d-md-none">
+          <nav class="dropdown">
             <button
-              id="boton"
-              class="btn p-0"
+              id="boton-menu-hamb"
+              class="btn"
               type="button"
               data-bs-toggle="dropdown"
               aria-expanded="false"
@@ -51,59 +46,39 @@
                 alt="menu-hamburguesa"
               />
             </button>
-            <ul class="dropdown-menu bg-transparent border-0">
+            <ul class="dropdown-menu">
               <li>
-                <a
-                  class="dropdown-item bg-primary-subtle border border-black rounded w-75 float-end"
-                  href="../index.html"
-                  type="button"
+                <a class="dropdown-item" href="../index.html" type="button"
                   >Home</a
                 >
               </li>
               <li>
-                <a
-                  class="dropdown-item bg-primary-subtle border border-black rounded w-75 float-end"
-                  href="./paquetes.html"
-                  type="button"
+                <a class="dropdown-item" href="./paquetes.html" type="button"
                   >Paquetes</a
                 >
               </li>
               <li>
-                <a
-                  class="dropdown-item bg-primary-subtle border border-black rounded w-75 float-end"
-                  href="./vuelos.html"
-                  type="button"
+                <a class="dropdown-item" href="./vuelos.html" type="button"
                   >Vuelos</a
                 >
               </li>
               <li>
-                <a
-                  class="dropdown-item bg-primary-subtle border border-black rounded w-75 float-end"
-                  href="./blog.html"
-                  type="button"
+                <a class="dropdown-item" href="./blog.html" type="button"
                   >Blog</a
                 >
               </li>
               <li>
-                <a
-                  class="dropdown-item bg-primary-subtle border border-black rounded w-75 float-end"
-                  href="./contacto.html"
-                  type="button"
+                <a class="dropdown-item" href="./contacto.html" type="button"
                   >Contacto</a
                 >
               </li>
             </ul>
           </nav>
         </div>
-        <nav
-          class="col-8 d-none d-md-flex justify-content-center align-items-end h-100 p-0"
-        >
+        <nav id="barra-navegacion" class="col-8 d-none d-md-flex">
           <ul class="nav nav-pills">
             <li class="nav-item">
-              <a
-                class="nav-link text-primary"
-                aria-current="page"
-                href="../index.html"
+              <a class="nav-link" aria-current="page" href="../index.html"
                 >Home</a
               >
             </li>

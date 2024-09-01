@@ -1,0 +1,83 @@
+main#main-vuelos{
+    margin-top: 3rem;
+    margin-bottom: 0;
+    padding-bottom: 3rem;
+    h2.titulo-vuelos{
+        padding: 0;
+        margin-left: 1.5rem;
+        margin-bottom: 1rem;
+        color: $texto-titulos;
+    }
+    div.row{
+        display: flex;
+        justify-content: space-around;
+        margin: 0;
+        padding: 1rem;
+        section{
+            border: black 1px solid !important;
+            padding: 1rem;
+            form{
+                #ciudad_origen,
+                #ciudad_destino,
+                #fecha_partida,
+                #fecha_regreso{
+                    width: 100%;
+                    border: black 1px solid;
+                    border-radius: 0.5rem;
+                    padding: 0.5rem;
+              }
+              fieldset{
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-evenly;
+                    /* align-items: baseline; */
+                    border: black 1px solid;
+                    border-radius: 0.5rem;
+                    padding: 0.5rem;
+                    margin-bottom: 2rem;
+                    padding-top: 2rem;
+                    padding-bottom: 2rem;
+                    background-color: $bg-claro;
+                    select{
+                        width: 20%;
+                        border: black 1px solid;
+                        border-radius: 0.5rem;
+                        padding: 0.5rem;
+                    }
+                }
+                #boton_buscar {
+                width: 20%;
+                padding: 0.5rem;
+                border-radius: 0.5rem;
+                float: right;
+                border: $texto-titulos solid 1px;
+                background-color: $bg-botones !important;
+                color: $texto-claro;
+                }
+            }
+        }
+        aside{
+            display: none;
+            padding: 0;
+            div#carouselExampleDark{
+                height: 100%;
+                div.carousel-indicators{
+                    button{
+                        background-color: $texto-claro ;
+                    }
+                }
+                div.carousel-inner{
+                    height: 100%;
+                    div.carousel-item{
+                        height: 100%;
+                        img.img-carousel{
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                    }
+                }
+            }
+        }
+}
+    }
+}
