@@ -22,25 +22,20 @@
     <title>Buscar Vuelos - Viajes Grupo 1</title>
   </head>
   <body>
-    <header
-      class="container-fluid sticky-top d-flex justify-content-center shadow-sm bg-secondary-subtle bg-opacity-75"
-    >
-      <section class="row col-8" id="logo">
+    <header class="container-fluid">
+      <section class="row" id="logo">
         <div class="col-4">
           <img
-            class="p-0 m-2"
             id="img_header"
             src="../assets/images/agencia-logo.jpg"
             alt="Brujula-logo de la empresa"
           />
         </div>
-        <div
-          class="col-8 d-flex justify-content-end align-items-center d-md-none"
-        >
-          <nav class="dropdown p-0">
+        <div class="col-8 d-md-none">
+          <nav class="dropdown">
             <button
-              id="boton"
-              class="btn p-0"
+              id="boton-menu-hamb"
+              class="btn"
               type="button"
               data-bs-toggle="dropdown"
               aria-expanded="false"
@@ -51,59 +46,39 @@
                 alt="menu-hamburguesa"
               />
             </button>
-            <ul class="dropdown-menu bg-transparent border-0">
+            <ul class="dropdown-menu">
               <li>
-                <a
-                  class="dropdown-item bg-primary-subtle border border-black rounded w-75 float-end"
-                  href="../index.html"
-                  type="button"
+                <a class="dropdown-item" href="../index.html" type="button"
                   >Home</a
                 >
               </li>
               <li>
-                <a
-                  class="dropdown-item bg-primary-subtle border border-black rounded w-75 float-end"
-                  href="./paquetes.html"
-                  type="button"
+                <a class="dropdown-item" href="./paquetes.html" type="button"
                   >Paquetes</a
                 >
               </li>
               <li>
-                <a
-                  class="dropdown-item bg-primary-subtle border border-black rounded w-75 float-end"
-                  href="./vuelos.html"
-                  type="button"
+                <a class="dropdown-item" href="./vuelos.html" type="button"
                   >Vuelos</a
                 >
               </li>
               <li>
-                <a
-                  class="dropdown-item bg-primary-subtle border border-black rounded w-75 float-end"
-                  href="./blog.html"
-                  type="button"
+                <a class="dropdown-item" href="./blog.html" type="button"
                   >Blog</a
                 >
               </li>
               <li>
-                <a
-                  class="dropdown-item bg-primary-subtle border border-black rounded w-75 float-end"
-                  href="./contacto.html"
-                  type="button"
+                <a class="dropdown-item" href="./contacto.html" type="button"
                   >Contacto</a
                 >
               </li>
             </ul>
           </nav>
         </div>
-        <nav
-          class="col-8 d-none d-md-flex justify-content-center align-items-end h-100 p-0"
-        >
+        <nav id="barra-navegacion" class="col-8 d-none d-md-flex">
           <ul class="nav nav-pills">
             <li class="nav-item">
-              <a
-                class="nav-link text-primary"
-                aria-current="page"
-                href="../index.html"
+              <a class="nav-link" aria-current="page" href="../index.html"
                 >Home</a
               >
             </li>
@@ -123,17 +98,17 @@
         </nav>
       </section>
     </header>
-    <main class="container-fluid mt-5 mb-0 mb-sm-5 pb-5">
-      <h2 class="p-0 ms-3 mb-2 text-primary">Vuelos</h2>
-      <div class="row d-flex justify-content-around m-0 p-2 p-sm-1 p-5">
-        <section class="col-11 col-md-8 border border-black p-4">
+    <main id="main-vuelos" class="container-fluid mb-sm-5">
+      <h2 class="titulo-vuelos">Vuelos</h2>
+      <div class="row p-sm-1">
+        <section class="col-11 col-md-8">
           <form action="" method="post" id="formulario_vuelos">
             <label for="ciudad_origen" class="form-label"
               >Ciudad de origen:</label
             >
             <input
               type="text"
-              class="form-control w-100 border-black rounded p-1"
+              class="form-control"
               id="ciudad_origen"
               name="ciudad_origen"
               placeholder="Origen"
@@ -144,7 +119,7 @@
             >
             <input
               type="text"
-              class="form-control w-100 border-black rounded p-1"
+              class="form-control"
               id="ciudad_destino"
               name="ciudad_destino"
               placeholder="Destino"
@@ -159,7 +134,7 @@
                 >
                 <input
                   type="date"
-                  class="form-control w-100 border-black rounded p-1"
+                  class="form-control"
                   id="fecha_partida"
                   name="fecha_partida"
                 />
@@ -172,20 +147,18 @@
                 >
                 <input
                   type="date"
-                  class="form-control w-100 border-black rounded p-1"
+                  class="form-control"
                   id="fecha_regreso"
                   name="fecha_regreso"
                 />
                 <br />
               </div>
             </div>
-            <fieldset
-              class="w-100 border border-black mb-4 p-2 pt-5 pb-5 p-sm-5 bg-success-subtle d-flex justify-content-evenly rounded"
-            >
+            <fieldset class="p-sm-5">
               <label for="adultos" class="form-label">Mayores</label>
               <select
                 type="date"
-                class="form-select w-25 border-black rounded p-1"
+                class="form-select"
                 id="adultos"
                 name="adultos"
               >
@@ -204,7 +177,7 @@
               <label for="menores" class="form-label">Menores</label>
               <select
                 type="date"
-                class="form-select w-25 border-black rounded p-1"
+                class="form-select"
                 id="menores"
                 name="menores"
               >
@@ -221,18 +194,13 @@
                 <option value="10">10</option>
               </select>
             </fieldset>
-            <input
-              class="bg-success bg-opacity-75 w-25 border p-2 rounded float-end"
-              type="button"
-              value="Buscar"
-              id="boton_buscar"
-            />
+            <input type="button" value="Buscar" id="boton_buscar" />
           </form>
         </section>
-        <aside class="d-none d-md-block col-3 border p-0">
+        <aside class="d-md-block col-3">
           <div
             id="carouselExampleDark"
-            class="carousel carousel-dark slide h-100"
+            class="carousel carousel-dark slide"
             data-bs-ride="carousel"
           >
             <div class="carousel-indicators">
@@ -240,45 +208,43 @@
                 type="button"
                 data-bs-target="#carouselExampleDark"
                 data-bs-slide-to="0"
-                class="active bg-white"
+                class="active"
                 aria-current="true"
                 aria-label="Slide 1"
               ></button>
               <button
-                class="bg-white"
                 type="button"
                 data-bs-target="#carouselExampleDark"
                 data-bs-slide-to="1"
                 aria-label="Slide 2"
               ></button>
               <button
-                class="bg-white"
                 type="button"
                 data-bs-target="#carouselExampleDark"
                 data-bs-slide-to="2"
                 aria-label="Slide 3"
               ></button>
             </div>
-            <div class="carousel-inner h-100">
-              <div class="carousel-item active h-100">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
                 <img
                   src="../assets/images/arraial.webp"
-                  class="d-block w-100 h-100"
-                  alt="..."
+                  class="img-carousel"
+                  alt="Imagen de playa de Arraial do Cabo"
                 />
               </div>
-              <div class="carousel-item h-100">
+              <div class="carousel-item">
                 <img
                   src="../assets/images/paris.webp"
-                  class="d-block w-100 h-100"
-                  alt="..."
+                  class="img-carousel"
+                  alt="Imagen de Paris"
                 />
               </div>
-              <div class="carousel-item h-100">
+              <div class="carousel-item">
                 <img
                   src="../assets/images/cancun.webp"
-                  class="d-block w-100 h-100"
-                  alt="..."
+                  class="img-carousel"
+                  alt="Imagen de playa de Cancun"
                 />
               </div>
             </div>
@@ -310,7 +276,7 @@
         </aside>
       </div>
     </main>
-    <footer
+    <!-- <footer
       class="container-fluid p-0 m-0 d-flex justify-content-center shadow-sm bg-secondary-subtle"
     >
       <div class="row col-11">
@@ -344,7 +310,7 @@
           <img class="p-1" src="../assets/images/facebook .png" alt="" />
         </section>
       </div>
-    </footer>
+    </footer> -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
