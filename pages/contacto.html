@@ -98,103 +98,86 @@
         </nav>
       </section>
     </header>
-    <main class="container-fluid mt-5 mb-4 pb-5">
-      <div class="row d-flex justify-content-around m-0 p-2 p-sm-1">
-        <h2 class="col-11 col-md-8 col-lg-7 mb-2 text-primary">Contacto</h2>
-        <section class="col-11 col-md-8 col-lg-7 border border-black p-4">
+    <main id="main-contacto" class="container-fluid">
+      <div class="row p-sm-1">
+        <h2 class="col-11 col-md-8 col-lg-7">Contacto</h2>
+        <section class="col-11 col-md-8 col-lg-7">
           <form action="" method="post" id="form_contacto">
-            <div
-              class="container-fluid p-0 d-flex flex-column flex-md-row justify-content-evenly"
-            >
+            <div class="container-fluid flex-md-row">
               <div class="col-12 col-md-5">
-                <label for="nombre">Nombre:</label><br />
+                <label for="nombre">Nombre:</label>
                 <input
-                  class="w-100 border-black mb-3 rounded p-1"
                   type="text"
                   name="nombre"
                   id="nombre"
+                  placeholder="Nombre"
                   required
-                /><br />
+                />
               </div>
               <div class="col-2"></div>
               <div class="col-12 col-md-5">
-                <label for="apellido">Apellido:</label><br />
+                <label for="apellido">Apellido:</label>
                 <input
-                  class="w-100 border-black mb-3 rounded p-1"
                   type="text"
                   name="apellido"
                   id="apellido"
+                  placeholder="Apellido"
                   required
-                /><br />
+                />
               </div>
             </div>
             <label for="email">Correo electrónico:</label><br />
             <input
-              class="w-100 border-black mb-3 rounded p-1"
               type="email"
               id="email"
               name="email"
+              placeholder="Correo electrónico"
               required
             /><br />
             <label for="telefono">Teléfono:</label><br />
             <input
-              class="w-50 border-black mb-3 rounded p-1"
               type="tel"
               id="telefono"
               name="telefono"
+              placeholder="444-444444"
               required
             /><br />
             <label for="consulta">Consulta:</label><br />
             <textarea
-              class="w-100 border-black mb-3 rounded p-1"
               id="consulta"
               name="consulta"
               rows="5"
+              placeholder="Consulta"
               required
             ></textarea
             ><br />
-            <input
-              class="bg-success bg-opacity-75 w-25 border p-2 rounded float-end"
-              type="submit"
-              value="Enviar"
-              id="boton_enviar"
-            />
+            <input type="submit" value="Enviar" id="boton_enviar" />
           </form>
         </section>
       </div>
     </main>
-    <footer
-      class="container-fluid p-0 m-0 d-flex justify-content-center shadow-sm bg-secondary-subtle"
-    >
+    <footer class="container-fluid">
       <div class="row col-11">
-        <section
-          id="logo_footer"
-          class="w-75 h-100 d-flex justify-content-start align-items-center p-0 m-0"
-        >
+        <section id="logo_footer">
           <img
-            class="p-0 m-2"
             id="img_footer"
             src="../assets/images/agencia-logo.jpg"
             alt="Brujula-logo de la empresa"
           />
-          <article class="p-0 m-0">
-            <h4 class="p-0 m-0">Viajes Grupo 1</h4>
-            <p class="p-0 m-0">Teléfonos: 26987632-26980987</p>
-            <p class="p-0 m-0">E-mail: grupo1@gmail.com</p>
+          <article>
+            <h4>Viajes Grupo 1</h4>
+            <p>Teléfonos: 26987632-26980987</p>
+            <p>E-mail: grupo1@gmail.com</p>
           </article>
         </section>
-        <section
-          id="redes-sociales"
-          class="col-5 w-25 h-100 d-flex justify-content-end align-items-center p-0 m-0"
-        >
-          <img class="p-1" src="../assets/images/instagram .png" alt="" />
+        <section id="redes-sociales" class="col-5">
+          <img src="../assets/images/instagram .png" alt="Logo de Instagram" />
           <img
-            class="p-1"
             id="logo-twitter"
             src="../assets/images/twitter .png"
-            alt=""
+            alt="Logo de Twitter"
           />
-          <img class="p-1" src="../assets/images/facebook .png" alt="" />
+          <img src="../assets/images/facebook .png" alt="Logo de Facebook" />
         </section>
       </div>
     </footer>
