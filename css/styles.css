@@ -5,81 +5,6 @@
   font-family: cursive;
 }
 
-/* @mixin card-modal($image-src, $modal-id, $title, $description, $modal-content) {
-    .card {
-      margin-bottom: 1rem;
-      padding: 0;
-
-      .row {
-        gap: 0;
-
-        .col-md-4 {
-          img {
-            @include img-fluid();
-            border-radius: $border-radius-start; // Utilizar variable o definir el valor
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-          }
-        }
-
-        .col-md-8 {
-          .card-body {
-            .card-title {
-              font-size: 1.5rem;
-              margin-bottom: 0.75rem;
-            }
-
-            .card-text {
-              font-size: 1rem;
-              margin-bottom: 1.25rem;
-            }
-
-            .btn-primary {
-              @include btn(); // Si tienes un mixin para botones
-              margin-top: 0.5rem;
-            }
-          }
-        }
-      }
-
-      .modal {
-        &.fade {
-          background-color: rgba(255, 255, 255, 0.25);
-        }
-
-        .modal-dialog-scrollable {
-          .modal-content {
-            background-color: #343a40; // bg-dark
-
-            .modal-header {
-              .modal-title {
-                color: white;
-                font-size: 1.25rem;
-              }
-
-              .btn-close {
-                background-color: white;
-                border: none;
-              }
-            }
-
-            .modal-body {
-              color: white;
-              font-size: 1rem;
-              line-height: 1.5;
-            }
-
-            .modal-footer {
-              .btn-secondary {
-                @include btn-secondary();
-              }
-            }
-          }
-        }
-      }
-    }
-  } */
 header {
   background-color: #D8EBF2;
   margin: 0;
@@ -153,6 +78,107 @@ header section.row #barra-navegacion ul li.nav-item:hover {
 }
 header section.row #barra-navegacion ul li.nav-item:hover a.nav-link {
   color: #D8EBF2;
+}
+
+main#main-index {
+  padding: 0;
+  background-color: #EFF2D8;
+}
+main#main-index div#contenedor-main {
+  margin: auto;
+  padding: 0;
+  padding-top: 2rem;
+}
+main#main-index div#contenedor-main section.col-6 {
+  padding: 0.3rem;
+}
+main#main-index div#contenedor-main section.col-6 div {
+  padding: 0;
+  height: 100%;
+  color: white;
+}
+main#main-index div#contenedor-main section.col-6 div img.card-img {
+  height: 100%;
+  padding: 0;
+}
+main#main-index div#contenedor-main section.col-6 div div {
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  color: #EFF2D8;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+main#main-index div#contenedor-main section.col-6 div div div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  padding-bottom: 0.5rem;
+}
+main#main-index div#contenedor-main section.col-6 div div div h3.card-title {
+  text-align: center;
+  font-size: x-large;
+}
+main#main-index div#contenedor-main section.col-6 div div div p {
+  text-align: center;
+  font-size: large;
+  margin: 0;
+}
+main#main-index div#contenedor-main section.col-6 div div div a.btn {
+  border: #025E73 solid 1px;
+  background-color: #79D0F2;
+  width: 25%;
+  padding: 0.2rem;
+  border-radius: 1rem;
+}
+main#main-index div.container-fluid {
+  display: flex;
+  justify-content: center;
+}
+main#main-index div.container-fluid section.row {
+  height: 100%;
+  padding: 0;
+}
+main#main-index div.container-fluid section.row h2 {
+  color: #025E73;
+  padding-top: 0.5rem;
+}
+main#main-index div.container-fluid section.row div {
+  margin: 0;
+  padding: 0.2rem;
+  margin-bottom: 3rem;
+}
+main#main-index div.container-fluid section.row div div.col {
+  margin: 0;
+  padding: 0.4rem;
+}
+main#main-index div.container-fluid section.row div div.col div.card {
+  height: 100%;
+  padding: 0;
+}
+main#main-index div.container-fluid section.row div div.col div.card img {
+  height: 50%;
+}
+main#main-index div.container-fluid section.row div div.col div.card div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 50%;
+}
+main#main-index div.container-fluid section.row div div.col div.card div h4, main#main-index div.container-fluid section.row div div.col div.card div p {
+  color: black;
+}
+main#main-index div.container-fluid section.row div div.col div.card div.card-body:hover h4, main#main-index div.container-fluid section.row div div.col div.card div.card-body:hover p {
+  color: #025E73;
+}
+main#main-index div.container-fluid section.row div div.col div.card.card:hover {
+  transition: transform 0.5s easy;
+  transform: scale(1.03);
 }
 
 footer {
@@ -285,6 +311,56 @@ header section.row #barra-navegacion ul li.nav-item:hover {
 }
 header section.row #barra-navegacion ul li.nav-item:hover a.nav-link {
   color: #D8EBF2;
+}
+
+main#main-paquetes {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  background-color: #EFF2D8;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+}
+main#main-paquetes div {
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+}
+main#main-paquetes div h2 {
+  color: #025E73;
+}
+main#main-paquetes div section.row {
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0;
+}
+main#main-paquetes div section.row div {
+  margin: 0;
+}
+main#main-paquetes div section.row div div div.card {
+  height: 100%;
+  padding: 0;
+}
+main#main-paquetes div section.row div div div.card img {
+  height: 50%;
+}
+main#main-paquetes div section.row div div div.card div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 50%;
+}
+main#main-paquetes div section.row div div div.card div h4, main#main-paquetes div section.row div div div.card div p {
+  color: black;
+}
+main#main-paquetes div section.row div div div.card div.card-body:hover h4, main#main-paquetes div section.row div div div.card div.card-body:hover p {
+  color: #025E73;
+}
+main#main-paquetes div section.row div div div.card.card:hover {
+  transition: transform 0.5s easy;
+  transform: scale(1.03);
 }
 
 footer {
@@ -420,9 +496,6 @@ header section.row #barra-navegacion ul li.nav-item:hover a.nav-link {
 }
 
 main#main-vuelos {
-  /* margin-top: 3rem;
-  margin-bottom: 3rem; */
-  /* padding-bottom: 3rem; */
   padding-top: 3rem;
   padding-bottom: 6rem;
   background-color: #EFF2D8;
@@ -440,8 +513,6 @@ main#main-vuelos div.row {
   padding: 1rem;
 }
 main#main-vuelos div.row section {
-  /* border: black 1px solid !important; */
-  /*  background-color: white; */
   padding: 1rem;
 }
 main#main-vuelos div.row section form #ciudad_origen,
@@ -477,7 +548,7 @@ main#main-vuelos div.row section form #boton_buscar {
   border-radius: 0.5rem;
   float: right;
   border: #025E73 solid 1px;
-  background-color: #79D0F2 !important;
+  background-color: #79D0F2;
 }
 main#main-vuelos div.row aside {
   display: none;
@@ -631,6 +702,63 @@ header section.row #barra-navegacion ul li.nav-item:hover {
 }
 header section.row #barra-navegacion ul li.nav-item:hover a.nav-link {
   color: #D8EBF2;
+}
+
+main#main-blog {
+  background-color: #EFF2D8;
+  padding: 4rem 0 6rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main#main-blog h2 {
+  color: #025E73;
+  margin-bottom: 1rem;
+  text-align: start;
+}
+main#main-blog section {
+  padding: 0;
+  height: 100%;
+}
+main#main-blog section div.card {
+  padding: 0;
+  margin-bottom: 1rem;
+}
+main#main-blog section div.card div div img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+main#main-blog section div.card div div div h3 {
+  color: #025E73;
+}
+main#main-blog section div.card div div div button.btn {
+  border: #025E73 solid 1px;
+  background-color: #79D0F2;
+  width: 20%;
+  padding: 0.4rem;
+  border-radius: 1rem;
+}
+main#main-blog section div.card div div div div div {
+  display: flex;
+  justify-content: center;
+}
+main#main-blog section div.card div div div div div div.modal-content {
+  background-color: white;
+  box-shadow: 0 3px 10px 3px rgb(1, 93, 114);
+}
+main#main-blog section div.card div div div div div div.modal-content div.modal-header h3 {
+  color: #025E73;
+}
+main#main-blog section div.card div div div div div div.modal-content div.modal-header button.btn-close {
+  color: #025E73;
+}
+main#main-blog section div.card div div div div div div.modal-content div.modal-body {
+  color: #025E73;
+}
+main#main-blog section div.card div div div div div div.modal-content div.modal-footer {
+  background-color: #D8EBF2;
 }
 
 footer {
@@ -887,63 +1015,6 @@ footer div.row section#redes-sociales img#logo-twitter {
   width: 36px;
   height: 36px;
   padding: 0.2rem;
-}
-
-main#main-blog {
-  background-color: #EFF2D8;
-  padding: 4rem 0 6rem 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-main#main-blog h2 {
-  color: #025E73;
-  margin-bottom: 1rem;
-  text-align: start;
-}
-main#main-blog section {
-  padding: 0;
-  height: 100%;
-}
-main#main-blog section div.card {
-  padding: 0;
-  margin-bottom: 1rem;
-}
-main#main-blog section div.card div div img {
-  width: 100%;
-  height: 100%;
-  border-top-left-radius: 0.5rem;
-  border-bottom-left-radius: 0.5rem;
-}
-main#main-blog section div.card div div div h3 {
-  color: #025E73;
-}
-main#main-blog section div.card div div div button.btn {
-  border: #025E73 solid 1px;
-  background-color: #79D0F2;
-  width: 20%;
-  padding: 0.4rem;
-  border-radius: 1rem;
-}
-main#main-blog section div.card div div div div div {
-  display: flex;
-  justify-content: center;
-}
-main#main-blog section div.card div div div div div div.modal-content {
-  background-color: white;
-  box-shadow: 0 3px 10px 3px rgb(1, 93, 114);
-}
-main#main-blog section div.card div div div div div div.modal-content div.modal-header h3 {
-  color: #025E73;
-}
-main#main-blog section div.card div div div div div div.modal-content div.modal-header button.btn-close {
-  color: #025E73;
-}
-main#main-blog section div.card div div div div div div.modal-content div.modal-body {
-  color: #025E73;
-}
-main#main-blog section div.card div div div div div div.modal-content div.modal-footer {
-  background-color: #D8EBF2;
 }
 
 /*# sourceMappingURL=styles.css.map */

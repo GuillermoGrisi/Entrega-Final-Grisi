@@ -1,7 +1,4 @@
 main#main-vuelos{
-    /* margin-top: 3rem;
-    margin-bottom: 3rem; */
-    /* padding-bottom: 3rem; */
     padding-top: 3rem;
     padding-bottom: 6rem;
     background-color: $bg-blanco;
@@ -18,8 +15,6 @@ main#main-vuelos{
         padding: 1rem;
         
         section{
-            /* border: black 1px solid !important; */
-           /*  background-color: white; */
             padding: 1rem;
             form{
                 #ciudad_origen,
@@ -55,7 +50,7 @@ main#main-vuelos{
                 border-radius: 0.5rem;
                 float: right;
                 border: $texto-titulos solid 1px;
-                background-color: $bg-botones !important;
+                background-color: $bg-botones;
                 }
             }
         }
