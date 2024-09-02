@@ -1,0 +1,68 @@
+main#main-contacto{
+    background-color: $bg-blanco;
+    padding: 4rem 0 6rem 0;
+    div.row{
+        display: flex;
+        justify-content: space-around;
+        margin: 0;
+        padding: 1rem;
+        h2{
+            margin-bottom: 1rem;
+            color: $texto-titulos;
+        }
+        section{
+            padding: 0.3rem;
+            form{
+                div{
+                    padding: 0;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    #nombre{
+                        width: 100%;
+                        border: black 1px solid;
+                        border-radius: 0.5rem;
+                        padding: 0.5rem;
+                        margin-bottom: 1rem;
+                    }
+                    #apellido{
+                        width: 100%;
+                        border: black 1px solid;
+                        border-radius: 0.5rem;
+                        padding: 0.5rem;
+                        margin-bottom: 1rem;
+                    }
+                }
+                #email{
+                    width: 100%;
+                    border: black 1px solid;
+                    border-radius: 0.5rem;
+                    padding: 0.5rem;
+                    margin-bottom: 1rem;
+                }
+                #telefono{
+                    width: 50%;
+                    border: black 1px solid;
+                    border-radius: 0.5rem;
+                    padding: 0.5rem;
+                    margin-bottom: 1rem;
+                }
+                #consulta{
+                    width: 100%;
+                    border: black 1px solid;
+                    border-radius: 0.5rem;
+                    padding: 0.5rem;
+                    margin-bottom: 1rem;
+                }
+                #boton_enviar{
+                    width: 20%;
+                    padding: 0.5rem;
+                    border-radius: 0.5rem;
+                    float: right;
+                    border: $texto-titulos solid 1px;
+                    background-color: $bg-botones;
+                }
+            }
+        }
+    }
+}
