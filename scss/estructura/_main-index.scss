@@ -1,0 +1,39 @@
+main#main-index{
+    padding: 0;
+    background-color: $bg-blanco;
+    div#contenedor-main{
+        margin: auto;
+        padding: 0;
+        padding-top: 2rem;
+        section.col-6{
+            padding: 0.3rem;
+            div{
+                @include card-portada-index;
+            }
+        }
+    }
+    div.container-fluid{
+        display: flex;
+        justify-content: center;
+        section.row{
+            height: 100%;
+            padding: 0;
+            h2{
+                color: $texto-titulos;
+                padding-top: 0.5rem;
+            }
+            div{
+                margin: 0;
+                padding: 0.2rem;
+                margin-bottom: 3rem;
+                div.col{
+                    margin: 0;
+                    padding: 0.4rem;
+                    div.card{
+                        @include card-viajes;
+                    }
+                }
+            }
+        }
+    }
+}
