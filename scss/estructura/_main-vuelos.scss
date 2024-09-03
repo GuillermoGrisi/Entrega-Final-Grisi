@@ -1,11 +1,11 @@
 main#main-vuelos{
-    padding-top: 3rem;
+    padding-top: 4rem;
     padding-bottom: 6rem;
     background-color: $bg-blanco;
     h2.titulo-vuelos{
         padding: 0;
         margin-left: 1.5rem;
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
         color: $texto-titulos;
     }
     div.row{
@@ -15,7 +15,7 @@ main#main-vuelos{
         padding: 1rem;
         
         section{
-            padding: 1rem;
+            padding: 0;
             form{
                 #ciudad_origen,
                 #ciudad_destino,

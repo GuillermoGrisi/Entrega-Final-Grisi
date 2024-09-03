@@ -1,7 +1,7 @@
 header{
     background-color: $bg-claro;
     margin: 0;
-    padding: 0 !important; 
+    padding: 0; 
     position: sticky;
     top: 0;
     z-index: 1;
@@ -42,12 +42,15 @@ header{
                     padding: 0;
                     li{
                         a.dropdown-item{
-                            width: 80%;
-                            background-color: $texto-claro;
+                            width: 100%;
+                            font-weight: bolder;
+                            background-color: $bg-botones;
+                            padding: 0.3rem;
                             border: black 1px solid;
-                            border-radius: 5px;
+                            border-radius: 10px;
+                            margin: 1px;
                             float: right;
-                            text-decoration: none !important;
+                            text-decoration: none;
                         }
                     }
                 }
@@ -63,7 +66,7 @@ header{
             ul{
                 li{
                     a.nav-link{
-                        text-decoration: none !important;
+                        text-decoration: none;
                         color: $texto-titulos;
                     }
                     &.nav-item:hover {
