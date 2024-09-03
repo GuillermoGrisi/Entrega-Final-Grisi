@@ -8,7 +8,7 @@
 header {
   background-color: #D8EBF2;
   margin: 0;
-  padding: 0 !important;
+  padding: 0;
   position: sticky;
   top: 0;
   z-index: 1;
@@ -53,12 +53,15 @@ header section.row div nav.dropdown ul.dropdown-menu {
   padding: 0;
 }
 header section.row div nav.dropdown ul.dropdown-menu li a.dropdown-item {
-  width: 80%;
-  background-color: #D0D991;
+  width: 100%;
+  font-weight: bolder;
+  background-color: #79D0F2;
+  padding: 0.3rem;
   border: black 1px solid;
-  border-radius: 5px;
+  border-radius: 10px;
+  margin: 1px;
   float: right;
-  text-decoration: none !important;
+  text-decoration: none;
 }
 header section.row #barra-navegacion {
   padding: 0;
@@ -68,7 +71,7 @@ header section.row #barra-navegacion {
   align-items: end;
 }
 header section.row #barra-navegacion ul li a.nav-link {
-  text-decoration: none !important;
+  text-decoration: none;
   color: #025E73;
 }
 header section.row #barra-navegacion ul li.nav-item:hover {
@@ -123,11 +126,12 @@ main#main-index div#contenedor-main section.col-6 div div div {
 main#main-index div#contenedor-main section.col-6 div div div h3.card-title {
   text-align: center;
   font-size: x-large;
+  margin-bottom: 0.3rem;
 }
 main#main-index div#contenedor-main section.col-6 div div div p {
   text-align: center;
-  font-size: large;
-  margin: 0;
+  font-size: smaller;
+  margin-bottom: 0.3rem;
 }
 main#main-index div#contenedor-main section.col-6 div div div a.btn {
   border: #025E73 solid 1px;
@@ -203,7 +207,7 @@ footer div.row section#logo_footer #img_footer {
   width: 80px;
   padding: 0;
   margin: 1rem;
-  margin-left: 0 !important;
+  margin-left: 0;
 }
 footer div.row section#logo_footer article {
   padding: 0;
@@ -237,11 +241,15 @@ footer div.row section#redes-sociales img#logo-twitter {
   height: 36px;
   padding: 0.2rem;
 }
+footer div.row section#redes-sociales img:hover {
+  transition: transform 0.5s easy;
+  transform: scale(1.1);
+}
 
 header {
   background-color: #D8EBF2;
   margin: 0;
-  padding: 0 !important;
+  padding: 0;
   position: sticky;
   top: 0;
   z-index: 1;
@@ -286,12 +294,15 @@ header section.row div nav.dropdown ul.dropdown-menu {
   padding: 0;
 }
 header section.row div nav.dropdown ul.dropdown-menu li a.dropdown-item {
-  width: 80%;
-  background-color: #D0D991;
+  width: 100%;
+  font-weight: bolder;
+  background-color: #79D0F2;
+  padding: 0.3rem;
   border: black 1px solid;
-  border-radius: 5px;
+  border-radius: 10px;
+  margin: 1px;
   float: right;
-  text-decoration: none !important;
+  text-decoration: none;
 }
 header section.row #barra-navegacion {
   padding: 0;
@@ -301,7 +312,7 @@ header section.row #barra-navegacion {
   align-items: end;
 }
 header section.row #barra-navegacion ul li a.nav-link {
-  text-decoration: none !important;
+  text-decoration: none;
   color: #025E73;
 }
 header section.row #barra-navegacion ul li.nav-item:hover {
@@ -385,7 +396,7 @@ footer div.row section#logo_footer #img_footer {
   width: 80px;
   padding: 0;
   margin: 1rem;
-  margin-left: 0 !important;
+  margin-left: 0;
 }
 footer div.row section#logo_footer article {
   padding: 0;
@@ -419,11 +430,15 @@ footer div.row section#redes-sociales img#logo-twitter {
   height: 36px;
   padding: 0.2rem;
 }
+footer div.row section#redes-sociales img:hover {
+  transition: transform 0.5s easy;
+  transform: scale(1.1);
+}
 
 header {
   background-color: #D8EBF2;
   margin: 0;
-  padding: 0 !important;
+  padding: 0;
   position: sticky;
   top: 0;
   z-index: 1;
@@ -468,12 +483,15 @@ header section.row div nav.dropdown ul.dropdown-menu {
   padding: 0;
 }
 header section.row div nav.dropdown ul.dropdown-menu li a.dropdown-item {
-  width: 80%;
-  background-color: #D0D991;
+  width: 100%;
+  font-weight: bolder;
+  background-color: #79D0F2;
+  padding: 0.3rem;
   border: black 1px solid;
-  border-radius: 5px;
+  border-radius: 10px;
+  margin: 1px;
   float: right;
-  text-decoration: none !important;
+  text-decoration: none;
 }
 header section.row #barra-navegacion {
   padding: 0;
@@ -483,7 +501,7 @@ header section.row #barra-navegacion {
   align-items: end;
 }
 header section.row #barra-navegacion ul li a.nav-link {
-  text-decoration: none !important;
+  text-decoration: none;
   color: #025E73;
 }
 header section.row #barra-navegacion ul li.nav-item:hover {
@@ -496,14 +514,14 @@ header section.row #barra-navegacion ul li.nav-item:hover a.nav-link {
 }
 
 main#main-vuelos {
-  padding-top: 3rem;
+  padding-top: 4rem;
   padding-bottom: 6rem;
   background-color: #EFF2D8;
 }
 main#main-vuelos h2.titulo-vuelos {
   padding: 0;
   margin-left: 1.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   color: #025E73;
 }
 main#main-vuelos div.row {
@@ -513,7 +531,7 @@ main#main-vuelos div.row {
   padding: 1rem;
 }
 main#main-vuelos div.row section {
-  padding: 1rem;
+  padding: 0;
 }
 main#main-vuelos div.row section form #ciudad_origen,
 main#main-vuelos div.row section form #ciudad_destino,
@@ -594,7 +612,7 @@ footer div.row section#logo_footer #img_footer {
   width: 80px;
   padding: 0;
   margin: 1rem;
-  margin-left: 0 !important;
+  margin-left: 0;
 }
 footer div.row section#logo_footer article {
   padding: 0;
@@ -628,11 +646,15 @@ footer div.row section#redes-sociales img#logo-twitter {
   height: 36px;
   padding: 0.2rem;
 }
+footer div.row section#redes-sociales img:hover {
+  transition: transform 0.5s easy;
+  transform: scale(1.1);
+}
 
 header {
   background-color: #D8EBF2;
   margin: 0;
-  padding: 0 !important;
+  padding: 0;
   position: sticky;
   top: 0;
   z-index: 1;
@@ -677,12 +699,15 @@ header section.row div nav.dropdown ul.dropdown-menu {
   padding: 0;
 }
 header section.row div nav.dropdown ul.dropdown-menu li a.dropdown-item {
-  width: 80%;
-  background-color: #D0D991;
+  width: 100%;
+  font-weight: bolder;
+  background-color: #79D0F2;
+  padding: 0.3rem;
   border: black 1px solid;
-  border-radius: 5px;
+  border-radius: 10px;
+  margin: 1px;
   float: right;
-  text-decoration: none !important;
+  text-decoration: none;
 }
 header section.row #barra-navegacion {
   padding: 0;
@@ -692,7 +717,7 @@ header section.row #barra-navegacion {
   align-items: end;
 }
 header section.row #barra-navegacion ul li a.nav-link {
-  text-decoration: none !important;
+  text-decoration: none;
   color: #025E73;
 }
 header section.row #barra-navegacion ul li.nav-item:hover {
@@ -745,6 +770,7 @@ main#main-blog section div.card div div div div div {
   justify-content: center;
 }
 main#main-blog section div.card div div div div div div.modal-content {
+  height: 60%;
   background-color: white;
   box-shadow: 0 3px 10px 3px rgb(1, 93, 114);
 }
@@ -783,7 +809,7 @@ footer div.row section#logo_footer #img_footer {
   width: 80px;
   padding: 0;
   margin: 1rem;
-  margin-left: 0 !important;
+  margin-left: 0;
 }
 footer div.row section#logo_footer article {
   padding: 0;
@@ -817,11 +843,15 @@ footer div.row section#redes-sociales img#logo-twitter {
   height: 36px;
   padding: 0.2rem;
 }
+footer div.row section#redes-sociales img:hover {
+  transition: transform 0.5s easy;
+  transform: scale(1.1);
+}
 
 header {
   background-color: #D8EBF2;
   margin: 0;
-  padding: 0 !important;
+  padding: 0;
   position: sticky;
   top: 0;
   z-index: 1;
@@ -866,12 +896,15 @@ header section.row div nav.dropdown ul.dropdown-menu {
   padding: 0;
 }
 header section.row div nav.dropdown ul.dropdown-menu li a.dropdown-item {
-  width: 80%;
-  background-color: #D0D991;
+  width: 100%;
+  font-weight: bolder;
+  background-color: #79D0F2;
+  padding: 0.3rem;
   border: black 1px solid;
-  border-radius: 5px;
+  border-radius: 10px;
+  margin: 1px;
   float: right;
-  text-decoration: none !important;
+  text-decoration: none;
 }
 header section.row #barra-navegacion {
   padding: 0;
@@ -881,7 +914,7 @@ header section.row #barra-navegacion {
   align-items: end;
 }
 header section.row #barra-navegacion ul li a.nav-link {
-  text-decoration: none !important;
+  text-decoration: none;
   color: #025E73;
 }
 header section.row #barra-navegacion ul li.nav-item:hover {
@@ -982,7 +1015,7 @@ footer div.row section#logo_footer #img_footer {
   width: 80px;
   padding: 0;
   margin: 1rem;
-  margin-left: 0 !important;
+  margin-left: 0;
 }
 footer div.row section#logo_footer article {
   padding: 0;
@@ -1015,6 +1048,10 @@ footer div.row section#redes-sociales img#logo-twitter {
   width: 36px;
   height: 36px;
   padding: 0.2rem;
+}
+footer div.row section#redes-sociales img:hover {
+  transition: transform 0.5s easy;
+  transform: scale(1.1);
 }
 
 /*# sourceMappingURL=styles.css.map */
