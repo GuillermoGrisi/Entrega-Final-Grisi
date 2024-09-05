@@ -5,6 +5,8 @@ main#main-contacto{
         display: flex;
         justify-content: space-around;
         margin: 0;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
         padding: 1rem;
         h2{
             margin-bottom: 1rem;
@@ -18,48 +20,30 @@ main#main-contacto{
                     display: flex;
                     flex-direction: column;
                     justify-content: space-evenly;
-                    #nombre{
-                        width: 100%;
-                        border: black 1px solid;
-                        border-radius: 0.5rem;
-                        padding: 0.5rem;
-                        margin-bottom: 1rem;
-                    }
+                    #nombre,
                     #apellido{
+                        @include estilo-input;
                         width: 100%;
-                        border: black 1px solid;
-                        border-radius: 0.5rem;
-                        padding: 0.5rem;
-                        margin-bottom: 1rem;
                     }
                 }
                 #email{
+                    @include estilo-input;
                     width: 100%;
-                    border: black 1px solid;
-                    border-radius: 0.5rem;
-                    padding: 0.5rem;
-                    margin-bottom: 1rem;
                 }
                 #telefono{
+                    @include estilo-input;
                     width: 50%;
-                    border: black 1px solid;
-                    border-radius: 0.5rem;
-                    padding: 0.5rem;
-                    margin-bottom: 1rem;
                 }
                 #consulta{
+                    @include estilo-input;
                     width: 100%;
-                    border: black 1px solid;
-                    border-radius: 0.5rem;
-                    padding: 0.5rem;
-                    margin-bottom: 1rem;
                 }
                 #boton_enviar{
                     width: 20%;
                     padding: 0.5rem;
                     border-radius: 0.5rem;
                     float: right;
-                    border: $texto-titulos solid 1px;
+                    border: $bordes-btn-input;
                     background-color: $bg-botones;
                 }
             }

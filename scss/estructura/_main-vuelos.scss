@@ -21,27 +21,22 @@ main#main-vuelos{
                 #ciudad_destino,
                 #fecha_partida,
                 #fecha_regreso{
+                    @include estilo-input;
                     width: 100%;
-                    border: black 1px solid;
-                    border-radius: 0.5rem;
-                    padding: 0.5rem;
               }
               fieldset{
+                    @include estilo-input;
                     width: 100%;
                     display: flex;
                     justify-content: space-evenly;
-                    border: black 1px solid;
-                    border-radius: 0.5rem;
-                    padding: 0.5rem;
+                    margin-top: 1rem;
                     margin-bottom: 2rem;
                     padding-top: 2rem;
                     padding-bottom: 2rem;
                     background-color: $bg-claro;
                     select{
+                        @include estilo-input;
                         width: 20%;
-                        border: black 1px solid;
-                        border-radius: 0.5rem;
-                        padding: 0.5rem;
                     }
                 }
                 #boton_buscar {
@@ -49,7 +44,7 @@ main#main-vuelos{
                 padding: 0.5rem;
                 border-radius: 0.5rem;
                 float: right;
-                border: $texto-titulos solid 1px;
+                border: $bordes-btn-input;
                 background-color: $bg-botones;
                 }
             }
